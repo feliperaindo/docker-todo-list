@@ -1,0 +1,1 @@
+docker build -t 'todobackend' ~/ArquivosGit/Projetos-trybe/sd-028-b-project-docker-todo-list/docker/todo-app/back-end/
