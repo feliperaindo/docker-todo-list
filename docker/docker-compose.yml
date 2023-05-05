@@ -5,7 +5,6 @@ services:
     build: ./todo-app/back-end/
     ports:
       - '3001:3001'
-    restart: always
 
   todofront:
     build: ./todo-app/front-end/
@@ -16,7 +15,6 @@ services:
       - '3000:3000'
     depends_on:
       - todoback
-    restart: always
 
   todotests:
     build: ./todo-app/tests/
@@ -25,4 +23,3 @@ services:
       - FRONT_PORT=3000
     depends_on:
       - todofront
-    restart: always
